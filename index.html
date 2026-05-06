@@ -29,6 +29,9 @@
                 var script = document.createElement("script");
                 script.src = link;
                 document.body.appendChild(script);
+            } else {
+                resposta.textContent = "CEP digitado incorretamente!"
+                document.getElementById("cep").value = ""
             }
         }
     
